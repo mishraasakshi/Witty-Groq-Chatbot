@@ -21,7 +21,7 @@ st.caption("Smart, fast, and remarkably sarcastic.")
 @st.cache_resource
 def get_model(api_key):
     return ChatGroq(
-        model="llama-3.3-70b-versatile", 
+        model="openai/gpt-oss-120b",  # Llama 3.3 70B was retired by Groq (Aug 2026)
         temperature=0.9, 
         groq_api_key=api_key
     )
